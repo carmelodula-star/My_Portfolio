@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2 class="logo">MyPortfolio</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="themeToggle">🌙</button>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="section home">
+  <div class="home-text">
+    <h1>Hello, I'm <span>Carmelo</span></h1>
+    <p class="tagline">Aspiring Web Developer | IT Student</p>
+    <p class="quote">
+      “God's plan is always better than yours.”
+    </p>
+  </div>
+  <img src="images/my_image.jpeg" alt="My Photo" class="profile">
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am an IT student with a strong interest in web development.
+    I enjoy creating clean, responsive websites and learning new technologies.
+  </p>
+  <ul>
+    <li>🎓 BS in Information Technology (3rd Year)</li>
+    <li>💻 Interested in Web Development & UI Design</li>
+    <li>🎮 Hobbies: Coding, Gaming, Learning new skills</li>
+  </ul>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section alt">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <div>
+      <h4>Programming</h4>
+      <p>HTML, CSS, JavaScript, Python, Java
+      </p>
+    </div>
+
+    <div>
+      <h4>Tools</h4>
+      <p>VS Code, GitHub, Jcreator, Linux</p>
+    </div>
+
+    <div>
+      <h4>Technical Areas</h4>
+      <p>Web Development, Basic Networking</p>
+    </div>
+
+    <div>
+      <h4>Soft Skills</h4>
+      <p>Teamwork, Problem-Solving, Communication</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Personal Portfolio Website</h3>
+    <p>
+      A responsive personal website showcasing my skills and profile.
+    </p>
+    <p><strong>Role:</strong> Designer & Developer</p>
+    <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Parking Lot Booking System</h3>
+    <p>
+      A simple booking interface for parking reservations.
+    </p>
+    <p><strong>Role:</strong> Frontend Developer</p>
+    <p><strong>Tools:</strong> HTML, CSS</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <h2>Contact Me</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p>Email: dulaacarmelo@email.com</p>
+  <p>
+    GitHub | LinkedIn | Facebook Dev Page
+  </p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

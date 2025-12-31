@@ -1,0 +1,124 @@
+:root {
+  --bg: #0b132b;
+  --text: #ffffff;
+  --accent: #3a86ff;
+  --card: #1c2541;
+}
+
+body.light {
+  --bg: #f4f4f4;
+  --text: #111;
+  --card: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: var(--card);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  z-index: 100;
+}
+
+nav a {
+  margin-right: 15px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 120px 35px;
+}
+
+.section.alt {
+  background: var(--card);
+}
+
+/* HOME */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: cornflowerblue;
+  background-color: #0f0961;
+}
+
+.home span {
+  color: rgb(26, 117, 160);
+}
+
+.profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+}
+
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* PROJECTS */
+.project-card {
+  background: var(--card);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+/* CONTACT */
+.contact-form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contact-form button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .home {
+    text-align: center;
+  }
+}
